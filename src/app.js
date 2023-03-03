@@ -1,20 +1,32 @@
-let tokyo = moment().tz("Asia/Tokyo").format("dddd, MMMM D, YYYY h:m A");
-let france = moment().tz("Europe/France").format("dddd, MMMM D, YYYY h:m A");
-let sydney = moment().tz("Australia/Sydney").format("dddd, MMMM D, YYYY h:m A");
+let tokyo = moment().tz("Asia/Tokyo");
+let paris = moment().tz("Europe/Paris");
+let sydney = moment().tz("Australia/Sydney");
+let lisbon = moment().tz("Europe/Lisbon");
+let new_york = moment().tz("America/New_York");
+let toronto = moment().tz("America/Toronto");
+let seoul = moment().tz("Asia/Seoul");
+let madeira = moment().tz("Atlantic/Madeira");
 
+let cities_array = {
+  tokyo: tokyo,
+  paris: paris,
+  sydney: sydney,
+  lisbon: lisbon,
+  new_york: new_york,
+  toronto: toronto,
+  seoul: seoul,
+  madeira: madeira,
+};
+
+let city_container = document.querySelector("#grid-container");
 let countrys = document.querySelector("#countrys");
-countrys.addEventListener("change", function (event) {
+countrys.addEventListener("change", function (event, index) {
+  cities_value = event.target.value;
   if (event.target.value.length > 0) {
-    if (event.target.value === "tokyo") {
-      alert(`It is ${tokyo} in Asia-Japan Tokyo 🍣`);
-    }
-
-    if (event.target.value === "france") {
-      alert(`It is ${france} in Europe France 🥖`);
-    }
-
-    if (event.target.value === "sydney") {
-      alert(`It is ${sydney} in Australia Sydney 🐟`);
-    }
+    city_container.innerHTML += `<div class="cities-preview" id="cities-preview">
+            <div class="city">${cities_value}</div>
+            <div class="hour">${cities_array[cities_value].format("YYYY")}</div>
+            <div class="date">${cities_array[cities_value].format("dddd")}</div>
+          </div>`;
   }
 });

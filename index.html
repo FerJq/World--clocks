@@ -15,16 +15,31 @@
       <!--World clock Container-->
       <div class="world-clock-container">
         <h1>World Clocks</h1>
+        <!-- Search form-->
         <form action="">
           <label for="">Choose a country</label>
           <select name="countrys" id="countrys">
             <option value="">Select a country</option>
             <option value="tokyo">🍣Tokyo🍣</option>
-            <option value="france">🥖France🥖</option>
+            <option value="paris">🥖Paris🥖</option>
             <option value="sydney">🐟Sydney🐟</option>
-            <option value="sydney">🐟Sydney🐟</option>
+            <option value="lisbon">Lisbon</option>
+            <option value="toronto">Toronto</option>
+            <option value="seoul">Seoul</option>
+            <option value="madeira">Madeira</option>
+            <option value="new York">New York</option>
           </select>
         </form>
+        <!-- End World Clock Container-->
+        <!--Cities preview container-->
+        <div class="grid-container" id="grid-container">
+          <div class="cities-preview" id="cities-preview">
+            <div class="city" id="actual_city"></div>
+            <div class="hour" id="actual_hour"></div>
+            <div class="date" id="actual_date"></div>
+          </div>
+        </div>
+        <!--End Cities preview Container-->
       </div>
       <!--Container End-->
       <footer><a href="">Open source code</a> By Fernanda Santiago</footer>
