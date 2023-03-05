@@ -22,11 +22,15 @@ let ame_ny = "America/New_York";
 
 let theme_bt = document.getElementById("mode");
 let body = document.querySelector("body");
-theme_bt.addEventListener("click", function () {
+theme_bt.addEventListener("click", function (event) {
   if (body.classList.contains("darkmode")) {
     body.classList.remove("darkmode");
+    event.preventDefault();
+    mode.innerHTML = `Night Time`;
   } else {
     body.classList.add("darkmode");
+    event.preventDefault();
+    mode.innerHTML = `Day time`;
   }
 });
 
