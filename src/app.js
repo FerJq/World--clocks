@@ -7,7 +7,7 @@ let dateSelected = document.getElementById("date");
 let current = document.getElementById("selected");
 let dropdown = document.querySelector("#countries");
 let display_all = document.getElementById("displayAllCities");
-let getAll = document.getElementById("all");
+let getAll = document.getElementById("showAll");
 let asia_tokyo = "Asia/Tokyo";
 let europe_paris = "Europe/Paris";
 let aus_sydn = "Australia/Sydney";
@@ -16,6 +16,8 @@ let ame_toro = "America/Toronto";
 let asia_seoul = "Asia/Seoul";
 let at_mad = "Atlantic/Madeira";
 let ame_ny = "America/New_York";
+
+
 function allCities() {
   let pieceHTML = `<div class="cities-preview" id="cities-preview">
             <div class="city" id="city">Tokyo</div>
@@ -101,7 +103,7 @@ getAll.addEventListener("click", function (event) {
   setInterval(interDisplay, 1000);
   event.preventDefault();
   let label = document.getElementById("selected");
-  label.innerHTML = `♥●•٠·˙˜”*°•.All Cities.•°*”˜˙·٠•●♥`;
+  label.innerHTML = `˜”*°•.All Cities.•°*”˜`;
 });
 
 function currentLocation() {
@@ -134,7 +136,7 @@ dropdown.addEventListener("change", function (event) {
   if (values_selection.length > 0) {
     function upd() {
       let citiesname = values_selection.replace("_", " ").split("/")[1];
-      selected.innerHTML = "♥●•٠·˙˜”*°•.City.•°*”˜˙·٠•●♥";
+      selected.innerHTML = "˜”*°•.City.•°*”˜";
       citySelected.innerHTML = citiesname;
       hourSelected.innerHTML = citiesTiming();
       dateSelected.innerHTML = citiesDate();

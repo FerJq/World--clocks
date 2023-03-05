@@ -8,16 +8,15 @@ body {
 }
 h1 {
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 label {
-  padding: 1%;
   font-size: 25px;
 }
 
 select {
-  margin: 15px auto;
+  font-weight: 600;
   border-radius: 20px;
   transition: all 200ms ease-in-out;
   padding: 3%;
@@ -26,10 +25,10 @@ select {
 }
 
 button {
-  box-shadow: 0px 0px 15px rgb(164, 164, 164);
+  box-shadow: 0px 0px 15px rgb(208, 211, 178);
   border-radius: 20px;
   font-size: 15px;
-  padding: 1%;
+  padding: 2%;
 }
 
 form {
@@ -51,12 +50,12 @@ small {
 }
 .world-clock-container {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/093/original/5640700fffffff.jpg?1677996059");
-  padding: 5%;
+  background-size: cover;
+  padding: 3%;
   display: block;
   margin: 0 auto;
   background-color: #b5d8de;
-  width: 800px;
-  max-width: 800px;
+  max-width: 500px;
   border-radius: 20px;
   box-shadow: 2px 2px 5px black;
 }
@@ -82,27 +81,48 @@ small {
 }
 
 .actual_city {
+  position: relative;
+  top: 7px;
   font-size: 35px;
 }
 .actual_hour {
   font-weight: 900;
   font-size: 35px;
+  position: relative;
+  top: 15px;
 }
 .actual_date {
   color: grey;
   padding: 0%;
   font-size: 15px;
+  position: relative;
+  top: -10px;
 }
 
 .cityy {
+  position: relative;
+  top: 7px;
   font-size: 35px;
 }
 .hourr {
   font-weight: 900;
   font-size: 35px;
+  position: relative;
+  top: 15px;
 }
 .datee {
   color: grey;
   padding: 0%;
   font-size: 15px;
+  position: relative;
+  top: -10px;
+}
+
+.customize-buttons {
+  padding: 2%;
+}
+
+/*All Cities*/
+.allCities {
+  padding: 2% auto;
 }
