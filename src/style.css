@@ -1,7 +1,7 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: rgba(159, 159, 159, 0.701);
+  background-color: rgba(255, 247, 210, 0.701);
   display: block;
   text-align: center;
   background-size: cover;
@@ -25,10 +25,19 @@ select {
 }
 
 button {
-  box-shadow: 0px 0px 15px rgb(208, 211, 178);
+  color: rgb(0, 0, 0);
+  transition: all 200ms ease-in-out;
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(255, 153, 174);
+  box-shadow: 0px 0px 3px rgb(255, 176, 211);
   border-radius: 20px;
   font-size: 15px;
-  padding: 2%;
+  padding: 4%;
+}
+
+button:hover {
+  background-color: rgb(255, 199, 227);
+  cursor: pointer;
 }
 
 form {
@@ -36,7 +45,8 @@ form {
 }
 
 footer {
-  margin-top: -10px;
+  font-weight: 600;
+  margin-top: -15px;
 }
 small {
   margin: 0 auto;
@@ -72,6 +82,15 @@ small {
 }
 
 .cities-preview {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  border-radius: 20px;
+  background-color: rgb(255, 200, 200);
+  padding: 1%;
+  border: 3px solid white;
+}
+
+.allcities-preview {
   display: grid;
   grid-template-columns: 2fr 2fr;
   border-radius: 20px;
@@ -119,10 +138,141 @@ small {
 }
 
 .customize-buttons {
+  background-color: blanchedalmond;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 20px;
   padding: 2%;
 }
 
 /*All Cities*/
 .allCities {
-  padding: 2% auto;
+  padding: 1% auto;
+}
+
+strong {
+  font-size: 15px;
+}
+
+.city_all {
+  font-size: 25px;
+  position: relative;
+  top: 7px;
+}
+.hour_all {
+  font-size: 35px;
+  position: relative;
+  top: 15px;
+  font-weight: 800;
+}
+.date_all {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+  font-weight: 800;
+}
+
+/*Night Time!*/
+
+.darkmode {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgba(47, 45, 66, 0.701);
+  color: white;
+  display: block;
+  text-align: center;
+  background-size: cover;
+}
+
+.darkmode .world-clock-container {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/140/original/ffffffffffffffffffffffffffffffffffffjpg.jpg?1678035397");
+  background-size: cover;
+  padding: 3%;
+  display: block;
+  margin: 0 auto;
+  background-color: #b5d8de;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.darkmode .actual-cities-preview {
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  border-radius: 20px;
+  background-color: rgb(43, 81, 150);
+  padding: 1%;
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 1px 1px 20px rgb(86, 102, 144);
+}
+
+.darkmode .cities-preview {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  border-radius: 20px;
+  background-color: rgb(62, 76, 94);
+  padding: 1%;
+  border: 3px solid rgb(39, 44, 57);
+}
+
+.darkmode .allcities-preview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 20px;
+  background-color: rgb(34, 77, 116);
+  border: 3px solid rgb(27, 42, 58);
+}
+
+.darkmode .customize-buttons {
+  background-color: rgb(53, 78, 120);
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  border: 2px solid rgb(32, 50, 79);
+  border-radius: 20px;
+  padding: 2%;
+}
+.darkmode select {
+  font-weight: 600;
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
+  padding: 3%;
+  width: 300px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(69, 71, 106);
+}
+
+.darkmode .actual_date {
+  color: rgb(144, 174, 255);
+  padding: 0%;
+  font-size: 15px;
+  position: relative;
+  top: -10px;
+}
+.darkmode .datee {
+  color: rgb(144, 174, 255);
+  padding: 0%;
+  font-size: 15px;
+  position: relative;
+  top: -10px;
+}
+
+.darkmode button {
+  color: rgb(255, 255, 255);
+  transition: all 200ms ease-in-out;
+  border-color: rgb(13, 111, 197);
+  background-color: rgb(71, 135, 191);
+  box-shadow: 0px 0px 3px rgb(33, 73, 107);
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 4%;
+}
+
+.darkmode button:hover {
+  background-color: rgb(103, 159, 255);
+  cursor: pointer;
 }

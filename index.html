@@ -14,7 +14,7 @@
     <div class="container">
       <!--World clock Container-->
       <div class="world-clock-container">
-        <h1>World Times</h1>
+        <h1>Cities Time</h1>
         <br />
         <!--actual-Cities preview container-->
         <label>˜”*°•. Current Location .•°*”˜</label>
@@ -24,6 +24,7 @@
           <div class="actual_hour" id="actual_hour"></div>
           <div class="actual_date" id="actual_date"></div>
         </div>
+        <br/>
                 <!-- Search form-->
         <form action="">
           <select name="countries" class="countries" id="countries">
@@ -42,15 +43,12 @@
          <br />
         <label id="selected"></label>
          <br />
-          <div class="cities-preview" id="displayAllCities">
-            <div class="cityy" id="city"></div>
-            <div class="hourr" id="hour"></div>
-            <div class="datee" id="date"></div>
-          </div>
+         <div class="displaycity"></div>
+         <br/>
         <div id="button" class="customize-buttons">
-          <button id="all">All Cities</button>
+          <a href="allcities-index.html" target="_self"><button id="all" >All Cities</button></a>
           <button id="mode">Night Time</button>
-          <button onclick="location.reload()">Back</button>
+          <a href="index.html"><button>Back</button></a>
         </div>
         </div>
       </div>
