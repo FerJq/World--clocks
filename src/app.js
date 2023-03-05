@@ -94,14 +94,15 @@ function allCities() {
   return pieceHTML;
 }
 
-getAll.addEventListener("click", function () {
+getAll.addEventListener("click", function (event) {
   function interDisplay() {
     display_all.innerHTML = allCities();
   }
   setInterval(interDisplay, 1000);
+  event.preventDefault();
+  let label = document.getElementById("selected");
+  label.innerHTML = `♥●•٠·˙˜”*°•.All Cities.•°*”˜˙·٠•●♥`;
 });
-
-
 
 function currentLocation() {
   let actual_location = moment.tz.guess();
@@ -133,7 +134,7 @@ dropdown.addEventListener("change", function (event) {
   if (values_selection.length > 0) {
     function upd() {
       let citiesname = values_selection.replace("_", " ").split("/")[1];
-      selected.innerHTML = "Chosen City";
+      selected.innerHTML = "♥●•٠·˙˜”*°•.City.•°*”˜˙·٠•●♥";
       citySelected.innerHTML = citiesname;
       hourSelected.innerHTML = citiesTiming();
       dateSelected.innerHTML = citiesDate();
