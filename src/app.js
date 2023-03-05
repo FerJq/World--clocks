@@ -1,28 +1,41 @@
-let city = document.querySelector("#actual_city");
-let hour = document.querySelector("#actual_hour");
-let date = document.querySelector("#actual_date");
-let city_container = document.querySelector("#grid-container");
+let cityC = document.querySelector("#actual_city");
+let hourC = document.querySelector("#actual_hour");
+let dateC = document.querySelector("#actual_date");
+let citySelected = document.getElementById("city");
+let hourSelected = document.getElementById("hour");
+let dateSelected = document.getElementById("date");
 let dropdown = document.querySelector("#countries");
 
-function citiesTiming(value) {
-  let hour = moment().tz(value).format("h:mm:ss");
-  return setInterval(hour, 1000);
+function currentLocation() {
+  let actual_location = moment.tz.guess();
+  let current_date = moment().tz(actual_location).format("MMMM Do YYYY");
+  let current_hour = moment().tz(actual_location).format("h:mm:ss A");
+  let citiesname = actual_location.replace("_", " ").split("/")[1];
+
+  cityC.innerHTML = citiesname;
+  hourC.innerHTML = current_hour;
+  dateC.innerHTML = current_date;
+}
+currentLocation();
+setInterval(currentLocation, 1000);
+
+function citiesTiming() {
+  let hour = moment().tz(values_selection).format("h:mm:ss A");
+  return hour;
 }
 
-function citiesDate(value) {
-  let date = moment().tz(value).format("MMMM Do YYYY");
+function citiesDate() {
+  let date = moment().tz(values_selection).format("MMMM Do YYYY");
   return date;
 }
 
-let x = dropdown.addEventListener("change", function (event) {
-  let selectedValue = event.target.value;
-  if (selectedValue.length > 0) {
-    let citiesname = selectedValue.replace("", " ").split("/")[1];
-    city_container.innerHTML += `<div class="cities-preview" id="cities-preview">
-            <div class="city">${citiesname}</div>
-            <div class="hour">${citiesTiming(selectedValue)}</div>
-            <div class="date">${citiesDate(selectedValue)}</div>
-          </div> 
-          </br >`;
+dropdown.addEventListener("change", function (event) {
+  values_selection = event.target.value;
+  array_values.push(values_selection);
+  if (values_selection.length > 0) {
+    function upd() {
+      let citiesname = values_selection.replace("_", " ").split("/")[1];
+    }
+    setInterval(upd, 1000);
   }
 });
