@@ -115,7 +115,7 @@ small {
   padding: 0%;
   font-size: 15px;
   position: relative;
-  top: -10px;
+  top: -2px;
 }
 
 .cityy {
@@ -134,7 +134,7 @@ small {
   padding: 0%;
   font-size: 15px;
   position: relative;
-  top: -10px;
+  top: -2px;
 }
 
 .customize-buttons {
@@ -265,14 +265,14 @@ strong {
   padding: 0%;
   font-size: 15px;
   position: relative;
-  top: -10px;
+  top: -2px;
 }
 .darkmode .datee {
   color: rgb(144, 174, 255);
   padding: 0%;
   font-size: 15px;
   position: relative;
-  top: -10px;
+  top: -2px;
 }
 
 .darkmode button {
