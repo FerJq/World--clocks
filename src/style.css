@@ -226,9 +226,10 @@ strong {
   display: grid;
   grid-template-columns: 2fr 2fr;
   border-radius: 20px;
-  background-color: rgb(62, 76, 94);
+  background-color: rgb(59, 86, 121);
   padding: 1%;
   border: 3px solid rgb(39, 44, 57);
+  box-shadow: 1px 1px 20px rgb(86, 102, 144);
 }
 
 .darkmode .allcities-preview {
