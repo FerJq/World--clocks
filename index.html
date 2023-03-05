@@ -14,10 +14,14 @@
     <div class="container">
       <!--World clock Container-->
       <div class="world-clock-container">
-        <h1>World Clocks</h1>
+        <h1>World Times</h1>
+        <br />
         <!-- Search form-->
+        <div id="button" class="customize-buttons">
+          <button id="all" ondblclick="location.reload()">All Cities</button>
+          <button id="mode">Night Time</button>
+        </div>
         <form action="">
-          <label for="">Choose a country</label>
           <select name="countries" class="countries" id="countries">
             <option value="">Select a country</option>
             <option value="Asia/Tokyo">🍣Tokyo🍣</option>
@@ -31,23 +35,24 @@
           </select>
         </form>
         <!-- End World Clock Container-->
-        <!--Cities preview container-->
-        <br />
-        <div class="cities-preview" id="grid-container">
-          <div class="cities-preview" id="cities-preview">
-            <div class="actual_city" id="actual_city"></div>
-            <div class="actual_hour" id="actual_hour"></div>
-            <div class="actual_date" id="actual_date"></div>
-          </div>
-          </br >
-          <div class="cities-preview" id="cities-preview">
-            <div class="city" id="city"></div>
-            <div class="hour" id="hour"></div>
-            <div class="date" id="date"></div>
-          </div> 
-          </br >
+        <!--actual-Cities preview container-->
+        <label>Current Location</label>
+         <br />
+        <div class="actual-cities-preview" id="cities-preview">
+          <div class="actual_city" id="actual_city"></div>
+          <div class="actual_hour" id="actual_hour"></div>
+          <div class="actual_date" id="actual_date"></div>
         </div>
-        <!--End Cities preview Container-->
+        <!--End actual-Cities preview Container-->
+         <br />
+        <label id="selected"></label>
+         <br />
+          <div class="cities-preview" id="displayAllCities">
+            <div class="cityy" id="city"></div>
+            <div class="hourr" id="hour"></div>
+            <div class="datee" id="date"></div>
+          </div>
+        </div>
       </div>
       <!--Container End-->
       <footer><a href="">Open source code</a> By Fernanda Santiago</footer>
