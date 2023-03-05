@@ -313,3 +313,13 @@ strong {
   border: 2px dashed white;
   color: rgb(73, 255, 240);
 }
+
+.darkmode a {
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.darkmode a:hover {
+  color: rgb(44, 153, 255);
+}
