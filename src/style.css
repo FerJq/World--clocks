@@ -174,12 +174,25 @@ strong {
   font-weight: 800;
 }
 
+/*Source Code */
+.sourceCode {
+  text-decoration: none;
+  color: rgb(202, 52, 135);
+  transition: all 200ms ease-in-out;
+}
+
+.sourceCode:hover {
+  text-decoration: underline;
+  border: 2px dashed white;
+  color: deeppink;
+}
+
 /*Night Time!*/
 
 .darkmode {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: rgba(47, 45, 66, 0.701);
+  background-color: rgb(66, 87, 99);
   color: white;
   display: block;
   text-align: center;
@@ -195,7 +208,7 @@ strong {
   background-color: #b5d8de;
   max-width: 500px;
   border-radius: 20px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 3px 2px 45px black;
 }
 
 .darkmode .actual-cities-preview {
@@ -275,4 +288,17 @@ strong {
 .darkmode button:hover {
   background-color: rgb(103, 159, 255);
   cursor: pointer;
+}
+
+/*Source Code */
+.darkmode .sourceCode {
+  text-decoration: none;
+  color: rgb(27, 137, 255);
+  transition: all 200ms ease-in-out;
+}
+
+.darkmode .sourceCode:hover {
+  text-decoration: underline;
+  border: 2px dashed white;
+  color: rgb(73, 255, 240);
 }
