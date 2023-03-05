@@ -32,7 +32,7 @@ theme_bt.addEventListener("click", function () {
 
 function allCities() {
   let pieceHTML = `<div class="cities-preview" id="cities-preview">
-            <div class="city_all" id="city">Tokyo</div>
+            <div class="city_all" id="city"><a href="https://www.gotokyo.org/en/index.html?utm_source=google&utm_medium=en_paidsearch&utm_campaign=R4&utm_content=tdA&gclid=CjwKCAiAmJGgBhAZEiwA1JZoll0h1q5NAst_q91FgmvzzP32cEvnm6pbqZ5l5foNPcOxx3ytyZEmvhoCn3cQAvD_BwE" target="_blank">🍣Tokyo</a></div>
             <div class="hour_all" id="hour">${moment()
               .tz(asia_tokyo)
               .format("h:mm:ss [<small>]A[</small>]")}</div>
@@ -41,7 +41,7 @@ function allCities() {
               .format("MMMM Do YYYY")}</div>
           </div>
           <div class="cities-preview" id="cities-preview">
-            <div class="city_all" id="city">Paris</div>
+            <div class="city_all" id="city"><a href="https://en.parisinfo.com" target="_blank">🥖Paris</a></div>
             <div class="hour_all" id="hour">${moment()
               .tz(europe_paris)
               .format("h:mm:ss [<small>]A[</small>]")}</div>
@@ -50,7 +50,7 @@ function allCities() {
               .format("MMMM Do YYYY")}</div>
           </div>
           <div class="cities-preview" id="cities-preview">
-            <div class="city_all" id="city">Sydney</div>
+            <div class="city_all" id="city"><a href="https://www.australia.com/en-us/places/sydney-and-surrounds/guide-to-sydney.html?cid=paid-search|us|SYD798|brand|Google||||||||||&ef_id=CjwKCAiAmJGgBhAZEiwA1JZollqEyBiX21W1RHR1lZA0bIiWX4zx0niKd2p3cw06hd8XLbCEaaIYxBoCHEgQAvD_BwE:G:s&s_kwcid=AL!4635!3!433828241982!e!!g!!sydney%20australia&utm_actcampaign=9514109454&gclid=CjwKCAiAmJGgBhAZEiwA1JZollqEyBiX21W1RHR1lZA0bIiWX4zx0niKd2p3cw06hd8XLbCEaaIYxBoCHEgQAvD_BwE" target="_blank">🐟Sydney</a></div>
             <div class="hour_all" id="hour">${moment()
               .tz(aus_sydn)
               .format("h:mm:ss [<small>]A[</small>]")}</div>
@@ -59,7 +59,7 @@ function allCities() {
               .format("MMMM Do YYYY")}</div>
           </div>
           <div class="cities-preview" id="cities-preview">
-            <div class="city_all" id="city">Lisbon</div>
+            <div class="city_all" id="city"><a href="https://www.visitlisboa.com/" target="_blank">🥞Lisbon</a></div>
             <div class="hour_all" id="hour">${moment()
               .tz(eu_lisbon)
               .format("h:mm:ss [<small>]A[</small>]")}</div>
@@ -68,7 +68,7 @@ function allCities() {
               .format("MMMM Do YYYY")}</div>
           </div>
           <div class="cities-preview" id="cities-preview">
-            <div class="city_all" id="city">Toronto</div>
+            <div class="city_all" id="city"><a href="https://www.toronto.ca/" target="_blank">🍫Toronto</a></div>
             <div class="hour_all" id="hour">${moment()
               .tz(ame_toro)
               .format("h:mm:ss [<small>]A[</small>]")}</div>
@@ -77,7 +77,7 @@ function allCities() {
               .format("MMMM Do YYYY")}</div>
           </div>
           <div class="cities-preview" id="cities-preview">
-            <div class="city_all" id="city">Seoul</div>
+            <div class="city_all" id="city"><a href="https://english.visitseoul.net/index" target="_blank">🍲Seoul</a></div>
             <div class="hour_all" id="hour">${moment()
               .tz(asia_seoul)
               .format("h:mm:ss [<small>]A[</small>]")}</div>
@@ -86,7 +86,7 @@ function allCities() {
               .format("MMMM Do YYYY")}</div>
           </div>
           <div class="cities-preview" id="cities-preview">
-            <div class="city_all" id="city">Madeira</div>
+            <div class="city_all" id="city"><a href="https://www.madeira.org/" target="_blank">☕Madeira</a></div>
             <div class="hour_all" id="hour">${moment()
               .tz(at_mad)
               .format("h:mm:ss [<small>]A[</small>]")}</div>
@@ -95,7 +95,7 @@ function allCities() {
               .format("MMMM Do YYYY")}</div>
           </div>
           <div class="cities-preview" id="cities-preview">
-            <div class="city_all" id="city">New York</div>
+            <div class="city_all" id="city"><a href="https://www.iloveny.com/" target="_blank">🗽New York</a></div>
             <div class="hour_all" id="hour">${moment()
               .tz(ame_ny)
               .format("h:mm:ss [<small>]A[</small>]")}</div>

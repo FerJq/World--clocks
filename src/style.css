@@ -53,6 +53,16 @@ small {
   font-size: 20px;
   font-weight: 400;
 }
+
+a {
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(255, 0, 81);
+}
 .container {
   padding: 2%;
   display: block;
