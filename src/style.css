@@ -1,7 +1,7 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: rgba(255, 247, 210, 0.701);
+  background-color: white;
   display: block;
   text-align: center;
   background-size: cover;
@@ -27,16 +27,16 @@ select {
 button {
   color: rgb(0, 0, 0);
   transition: all 200ms ease-in-out;
-  border-color: rgb(255, 255, 255);
-  background-color: rgb(255, 153, 174);
-  box-shadow: 0px 0px 3px rgb(255, 176, 211);
+  border-color: rgb(77, 77, 77);
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
   font-size: 15px;
-  padding: 4%;
+  padding: 1%;
 }
 
 button:hover {
-  background-color: rgb(255, 199, 227);
+  color: rgb(255, 0, 0);
+  background-color: rgb(230, 230, 230);
   cursor: pointer;
 }
 
@@ -52,16 +52,18 @@ small {
   margin: 0 auto;
   font-size: 20px;
   font-weight: 400;
+  color: rgb(82, 82, 82);
 }
 
 a {
+  font-weight: 600;
   transition: all 200ms ease-in-out;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 0, 0);
 }
 
 a:hover {
-  color: rgb(255, 0, 81);
+  color: rgb(3, 0, 152);
 }
 .container {
   padding: 2%;
@@ -69,15 +71,13 @@ a:hover {
   margin: 0 auto;
 }
 .world-clock-container {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/093/original/5640700fffffff.jpg?1677996059");
-  background-size: cover;
   padding: 3%;
   display: block;
   margin: 0 auto;
-  background-color: #b5d8de;
+  background-color: #ffffff;
   max-width: 500px;
   border-radius: 20px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 1px 4px 5px rgb(126, 126, 126);
 }
 /*displaying cities*/
 .actual-cities-preview {
@@ -85,34 +85,28 @@ a:hover {
   display: grid;
   grid-template-columns: 2fr 2fr;
   border-radius: 20px;
-  background-color: rgb(255, 230, 191);
   padding: 1%;
-  border: 3px solid rgb(255, 255, 255);
-  box-shadow: 1px 1px 20px rgb(255, 242, 237);
 }
 
 .cities-preview {
   display: grid;
   grid-template-columns: 2fr 2fr;
   border-radius: 20px;
-  background-color: rgb(255, 200, 200);
   padding: 1%;
-  border: 3px solid white;
 }
 
 .allcities-preview {
   display: grid;
   grid-template-columns: 2fr 2fr;
   border-radius: 20px;
-  background-color: rgb(255, 200, 200);
   padding: 1%;
-  border: 3px solid white;
 }
 
 .actual_city {
   position: relative;
   top: 7px;
   font-size: 35px;
+  color: red;
 }
 .actual_hour {
   font-weight: 900;
@@ -132,6 +126,7 @@ a:hover {
   position: relative;
   top: 7px;
   font-size: 35px;
+  color: red;
 }
 .hourr {
   font-weight: 900;
@@ -148,11 +143,8 @@ a:hover {
 }
 
 .customize-buttons {
-  background-color: blanchedalmond;
   display: block;
   margin: 0 auto;
-  width: 300px;
-  border: 3px solid rgb(255, 255, 255);
   border-radius: 20px;
   padding: 2%;
 }
@@ -167,6 +159,7 @@ strong {
 }
 
 .city_all {
+  color: red;
   font-size: 25px;
   position: relative;
   top: 7px;
@@ -187,14 +180,14 @@ strong {
 /*Source Code */
 .sourceCode {
   text-decoration: none;
-  color: rgb(202, 52, 135);
+  color: rgb(255, 0, 0);
   transition: all 200ms ease-in-out;
 }
 
 .sourceCode:hover {
   text-decoration: underline;
   border: 2px dashed white;
-  color: deeppink;
+  color: rgb(219, 103, 255);
 }
 
 /*Night Time!*/
