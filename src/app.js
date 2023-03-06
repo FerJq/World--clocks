@@ -122,6 +122,12 @@ function allCities() {
 
 setInterval(allCities, 1000);
 
+getAll.addEventListener("click", function () {
+  alert(
+    "Hi visitor, for more information about the city than you are interested, click on the name, have a nice time!💓"
+  );
+});
+
 function currentLocation() {
   let actual_location = moment.tz.guess();
   let current_date = moment().tz(actual_location).format("MMMM Do YYYY");
