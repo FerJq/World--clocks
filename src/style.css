@@ -72,10 +72,11 @@ a:hover {
   margin: 0 auto;
 }
 .world-clock-container {
+  background-color: white;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/286/original/9499.jpg?1678124658");
   padding: 3%;
   display: block;
   margin: 0 auto;
-  background-color: #ffffff;
   max-width: 500px;
   border-radius: 20px;
   box-shadow: 1px 4px 5px rgb(126, 126, 126);
@@ -205,7 +206,7 @@ strong {
 }
 
 .darkmode .world-clock-container {
-  background-image: url("");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/287/original/949dfdfdff9.jpg?1678124701");
   padding: 3%;
   display: block;
   margin: 0 auto;
