@@ -195,7 +195,7 @@ strong {
 .darkmode {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: rgb(66, 87, 99);
+  background-color: rgb(49, 49, 49);
   color: white;
   display: block;
   text-align: center;
@@ -203,54 +203,29 @@ strong {
 }
 
 .darkmode .world-clock-container {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/070/140/original/ffffffffffffffffffffffffffffffffffffjpg.jpg?1678035397");
-  background-size: cover;
   padding: 3%;
   display: block;
   margin: 0 auto;
-  background-color: #b5d8de;
+  background-color: #252525;
   max-width: 500px;
   border-radius: 20px;
-  box-shadow: 3px 2px 45px black;
-}
-
-.darkmode .actual-cities-preview {
-  font-size: 20px;
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  border-radius: 20px;
-  background-color: rgb(43, 81, 150);
-  padding: 1%;
-  border: 3px solid rgb(0, 0, 0);
-  box-shadow: 1px 1px 20px rgb(86, 102, 144);
-}
-
-.darkmode .cities-preview {
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  border-radius: 20px;
-  background-color: rgb(59, 86, 121);
-  padding: 1%;
-  border: 3px solid rgb(39, 44, 57);
-  box-shadow: 1px 1px 20px rgb(86, 102, 144);
+  box-shadow: 1px 4px 5px rgb(0, 0, 0);
 }
 
 .darkmode .allcities-preview {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-radius: 20px;
-  background-color: rgb(34, 77, 116);
-  border: 3px solid rgb(27, 42, 58);
 }
 
-.darkmode .customize-buttons {
-  background-color: rgb(53, 78, 120);
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-  border: 2px solid rgb(32, 50, 79);
+.darkmode button {
+  color: rgb(0, 0, 0);
+  transition: all 200ms ease-in-out;
+  border-color: rgb(77, 77, 77);
+  background-color: rgb(255, 255, 255);
   border-radius: 20px;
-  padding: 2%;
+  font-size: 15px;
+  padding: 1%;
 }
 .darkmode select {
   font-weight: 600;
@@ -260,33 +235,22 @@ strong {
   width: 300px;
   font-size: 20px;
   color: white;
-  background-color: rgb(69, 71, 106);
+  background-color: grey;
 }
 
 .darkmode .actual_date {
-  color: rgb(144, 174, 255);
+  color: rgb(255, 234, 0);
   padding: 0%;
   font-size: 15px;
   position: relative;
   top: -2px;
 }
 .darkmode .datee {
-  color: rgb(144, 174, 255);
+  color: rgb(255, 234, 0);
   padding: 0%;
   font-size: 15px;
   position: relative;
   top: -2px;
-}
-
-.darkmode button {
-  color: rgb(255, 255, 255);
-  transition: all 200ms ease-in-out;
-  border-color: rgb(13, 111, 197);
-  background-color: rgb(71, 135, 191);
-  box-shadow: 0px 0px 3px rgb(33, 73, 107);
-  border-radius: 20px;
-  font-size: 15px;
-  padding: 4%;
 }
 
 .darkmode button:hover {
@@ -297,20 +261,20 @@ strong {
 /*Source Code */
 .darkmode .sourceCode {
   text-decoration: none;
-  color: rgb(27, 137, 255);
+  color: rgb(255, 0, 0);
   transition: all 200ms ease-in-out;
 }
 
 .darkmode .sourceCode:hover {
   text-decoration: underline;
   border: 2px dashed white;
-  color: rgb(73, 255, 240);
+  color: rgb(0, 136, 255);
 }
 
 .darkmode a {
   transition: all 200ms ease-in-out;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
 }
 
 .darkmode a:hover {
