@@ -1,7 +1,7 @@
 body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: white;
+  background-color: rgb(176, 176, 176);
   display: block;
   text-align: center;
   background-size: cover;
@@ -90,6 +90,7 @@ a:hover {
 }
 
 .cities-preview {
+  transition: all 200ms ease-in-out;
   display: grid;
   grid-template-columns: 2fr 2fr;
   border-radius: 20px;
@@ -204,6 +205,7 @@ strong {
 }
 
 .darkmode .world-clock-container {
+  background-image: url("");
   padding: 3%;
   display: block;
   margin: 0 auto;

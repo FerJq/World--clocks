@@ -130,7 +130,7 @@ function currentLocation() {
     .format("h:mm:ss [<small>]A[</small>]");
   let citiesname = actual_location.replace("_", " ").split("/")[1];
 
-  cityC.innerHTML = citiesname;
+  cityC.innerHTML = `📌${citiesname}`;
   hourC.innerHTML = current_hour;
   dateC.innerHTML = current_date;
 }
@@ -154,7 +154,7 @@ dropdown.addEventListener("change", function (event) {
       let citiesname = values_selection.replace("_", " ").split("/")[1];
       displaycity.innerHTML = `<hr>
       <div class="cities-preview" id="displayAllCities">
-            <div class="cityy" id="city">${citiesname}</div>
+            <div class="cityy" id="city">🔴${citiesname}</div>
             <div class="hourr" id="hour">${citiesTiming()}</div>
             <div class="datee" id="date">${citiesDate()}</div>
           </div>`;
