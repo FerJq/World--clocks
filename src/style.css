@@ -31,7 +31,8 @@ button {
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   font-size: 15px;
-  padding: 1%;
+  padding: 2%;
+  font-size: 20px;
 }
 
 button:hover {
@@ -219,13 +220,14 @@ strong {
 }
 
 .darkmode button {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   transition: all 200ms ease-in-out;
   border-color: rgb(77, 77, 77);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(66, 66, 66);
   border-radius: 20px;
   font-size: 15px;
-  padding: 1%;
+  padding: 2%;
+  font-size: 20px;
 }
 .darkmode select {
   font-weight: 600;
@@ -254,7 +256,7 @@ strong {
 }
 
 .darkmode button:hover {
-  background-color: rgb(103, 159, 255);
+  background-color: rgb(255, 224, 24);
   cursor: pointer;
 }
 
@@ -279,4 +281,7 @@ strong {
 
 .darkmode a:hover {
   color: rgb(0, 132, 255);
+}
+.darkmode small {
+  color: rgb(255, 191, 0);
 }
